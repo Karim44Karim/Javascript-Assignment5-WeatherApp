@@ -1,5 +1,5 @@
 const API_KEY = "07fea89a91ea4473a06213536252006";
-const BASE_URL = "http://api.weatherapi.com/v1/forecast.json";
+const BASE_URL = "https://api.weatherapi.com/v1/forecast.json";
 const FORECAST_DAYS = 3;
 
 let data, day;
