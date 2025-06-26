@@ -1,0 +1,302 @@
+/* *********************** global  *********************** */
+:root{
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.clear-fix{
+    clear: both;
+}
+img{ display: block;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a, span {
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+/* *********************** global  *********************** */
+
+
+.w-80{
+    width: 80%;
+}
+.w-65{
+    width: 65%;
+}
+.w-40{
+    width: 40%;
+}
+.title{
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.title-description{
+    font-size: 10px;
+    line-height: 15px;
+    color: #bfc1c8;
+    margin: 0;
+}
+.bg-dark-custom{
+    background-color: #1E202B;
+}
+nav.nav-pills-custom li.nav-item-custom a.nav-link-custom{
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    padding: 2px 25px;
+    margin-inline: 7px;
+}
+nav.nav-pills-custom li.nav-item-custom a.nav-link-custom:hover{
+    color: #009ad8;
+    background-color: transparent;
+    border: 2px solid #009ad8;
+}
+nav.nav-pills-custom li.nav-item-custom a.nav-link-custom.active{
+    color: #009ad8;
+    background-color: transparent;
+    border: 2px solid #009ad8;
+}
+body:has(#homeView.d-block){
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+}
+button.btn.btn-custom{
+    background-color: #009AD8;
+    padding: 10px 40px;
+}
+button.btn.btn-custom-2{
+    background-color: #009AD8;
+    padding: 10px 20px;
+}
+input.form-control.bg-dark-custom.input-custom{
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+input.form-control.bg-dark-custom.input-custom::placeholder{
+    color: #97989D;
+    font-size: 14px;
+}
+input.form-control.bg-dark-custom.input-custom:focus{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.card-head-custom{
+    background-color: #2C2F3D;
+    color: #bfc1c8;
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px;
+}
+.border-top-left-custom{
+    border-top-left-radius: 15px;
+}
+.border-top-right-custom{
+    border-top-right-radius: 15px;
+}
+.city-name{
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #bfc1c8;
+}
+.card-body-custom{
+    background-color: #323544;
+    padding-inline: 20px;
+}
+.card-head-custom-dark{
+    background-color: #222430;
+    border-top-left-radius: 0px;
+}
+.card-body-custom-dark{
+    background-color: #262936;
+}
+.temperature{
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 135px;
+    color: white;
+}
+.temperature-secondary{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    margin-bottom: 10px;
+}
+.temperature-tertiary{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #bfc1c8;
+}
+.image-container{
+    min-width: 80px;
+    min-height: 80px;
+}
+.image-container-secondary{
+    width: 45px;
+    text-align: center;
+}
+.weather-condition{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #009ad8;
+}
+.weather-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #bfc1c8;
+    padding-block: 30px;
+    border-bottom-left-radius: 15px;
+}
+.weather-data i{
+    color: #8e8e8e;
+}
+.weather-data span{
+    padding-left: 5px;
+}
+
+footer{
+    padding-top: 50px;
+    background-color: #262936;
+}
+footer li{
+    background-color: #1E202B;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    transition: all 0.5s;
+}
+footer i{
+    color:#009AD8;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+footer li:hover{
+    background-color: #009AD8;
+}
+footer li:hover i{
+    color: white;
+}
+footer p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #bfc1c8;
+}
+.skeleton{
+    opacity: 0.7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+.skeleton-text{
+    width: 50%;
+    height: 0.5rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.125rem;
+}
+.skeleton-text:last-child{
+    width: 80%;
+}
+@keyframes skeleton-loading{
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+/* contact page */
+.nav-text{
+    font-size: 13px;
+    line-height: 20px;
+    color: #bfc1c8;
+}
+.nav-text .active{
+    color: white;
+}
+.breadcrumb-item.active::before {
+    font-family: "bootstrap-icons" !important;
+    content: "\F138";
+    color: #5C5F6B;
+}
+#contactSection nav{
+    margin-top: 50px;
+    background-color: #262936;
+    padding: 20px;
+    border-radius: 40px;
+}
+.map-container{
+    background-color: #262936;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.map-container i{
+    color: #4BA1D3;
+}
+.map-container p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #bfc1c8;
+    font-weight: 300;
+    margin: 0;
+    padding-left: 10px;
+}
+.contact-form h2{
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+}
+.contact-form p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #bfc1c8;
+    font-weight: 300;
+}
+.contact-form input, .contact-form textarea{
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid #393C48;
+    color: white;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: #85868C;
+}
+.contact-form input:focus, .contact-form input:hover, .contact-form textarea:focus, .contact-form textarea:hover{
+    background-color: transparent;
+    border-color: #009AD8;
+    color: white;
+}
+div nav ol li.breadcrumb-item-custom:hover{
+    text-decoration: underline !important;
+}
